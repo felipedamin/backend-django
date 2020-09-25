@@ -36,7 +36,7 @@ Outra ferramenta presenta nesta interface seria o chat com a Luna. Como não tí
 
 
 # Instalação
-É possível rodar tudo localmente, mas pode ser necessário atualizar o valor da variável "apiBaseURL" no código da interface e podem ocorrer problemas ao tentar atualizar a WordCloud na interface. A maneira mais fácil de testar a solução continua sendo utilizar a interface remota em http://www.hackathon-klabin.com:3000 
+É possível rodar tudo localmente, mas pode ser necessário atualizar o valor da variável "apiBaseURL" no código da interface. A maneira mais fácil de testar a solução continua sendo utilizar a interface remota em http://www.hackathon-klabin.com:3000 
 ## Instruções
 - Clone esse repositório
 - Será utilizado python3 e pip para instalar as dependencias
@@ -59,3 +59,6 @@ ou utilizando `nohup python3 manage.py runserver 0.0.0.0:3001 > app.log &`
 - Execute `npm install`
 - Execute `npm start`
 - A interface deve abrir automaticamente, caso isso não aconteça, acesse localhost:3000
+
+#### Atenção, ambas as pastas (backend e interface) devem estar localizadas na mesma pasta raiz. 
+-Também pode ser necessário executar `npm run-scripts build` na pasta da interface
