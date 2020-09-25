@@ -25,7 +25,14 @@ def show_wordcloud(data, fileName='wordcloud'):
      
     plt.imshow(wordcloud)
     #plt.show()
-    fig.savefig('../HackathonKlabin/src/wordclouds/'+fileName+'.png')
+    try:
+        fig.savefig('../HackathonKlabin/src/wordclouds/'+fileName+'.png')
+    except:
+        print("erro salvando word cloud")
+    try:
+        fig.savefig('../HackathonKlabin/build/static/media/wordcloud'+fileName+'.png')
+    except:
+        print('erro salvando imagem em static')
 
 if __name__ == "__main__":
     show_wordcloud('Adoro que todas as semanas temos lanches divertidos com a equipe Essa semana foi sensacional', 'pros')
