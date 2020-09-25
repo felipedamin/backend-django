@@ -1,4 +1,4 @@
-## backend-django
+# backend-django
 
 Esse é o repositório que contém o código server-side de nossa aplicação. Ele funciona em conjunto com a interface, que encontra-se em https://github.com/CarinaAlvarez/HackathonKlabin
 
@@ -20,15 +20,15 @@ O backend possui diferentes endpoints, são eles:
 Você pode tentar acessar nossa solução em http://www.hackathon-klabin.com:3000
 Atualmente ela está hospedada na AWS. Por questões de orçamento, a instância na nuvem pode apresentar instabilidades. Ao final desse documento encontra-se instruções para instalção e execução dele localmente. Caso o link http://www.hackathon-klabin.com:3000 fique muito tempo fora do ar, sintam-se livres para nos contatar, somos do Grupo 5.
 
-## Aplicação
+# Aplicação
 ![interface](/images/interface-main-page.png)
 ![conversar com a luna](/images/interface-chat-with-luna.png)
 ![enviar arquivo](/images/interface-sending-file.png)
 ![todas as opções da interface](/images/interface-all-cards.png)
 
-## Instalação
+# Instalação
 É possível rodar tudo localmente, mas pode ser necessário atualizar o valor da variável "apiBaseURL" no código da interface e podem ocorrer problemas ao tentar atualizar a WordCloud na interface. A maneira mais fácil de testar a solução continua sendo utilizar a interface remota em http://www.hackathon-klabin.com:3000 
-# Instruções
+## Instruções
 - Clone esse repositório
 - Será utilizado python3 e pip para instalar as dependencias
 - Instale as bibliotecas necessárias utilizando `pip install -r requirements.txt`
@@ -45,7 +45,7 @@ $ python3
 Rode o servidor django com `python3 manage.py runserver 0:3001`
 ou utilizando `nohup python3 manage.py runserver 0.0.0.0:3001 > app.log &`
 
-# Interface
+## Interface
 - Clone o repositório da interface que está em https://github.com/CarinaAlvarez/HackathonKlabin
 - Execute `npm install`
 - Execute `npm start`
