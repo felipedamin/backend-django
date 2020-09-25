@@ -22,4 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('time/', views.current_datetime),
     path('employee/', views.employeeView.as_view(), name='employee'),
+    path('topscores/', views.employeeTopScores.as_view(), name='topscores'),
+    path('feedback/', views.employeeFeedback.as_view(), name='feedback'),
+    path('wordcloud/', views.WordCloud.as_view(), name='wordcloud'),
+    path('redflags/', views.RedFlags.as_view(), name='redflags'),
 ]

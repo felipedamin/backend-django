@@ -26,7 +26,13 @@ SECRET_KEY = 'de(j#%$_rmds!^edhwa)(6*76fp*j3(d9&gl1v1(qq0%xwewef'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_METHODS = [
+    'GET',
+    'OPTIONS',
+    'POST',
+]
 
 # Application definition
 
@@ -39,9 +45,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'feedback',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
